@@ -1,8 +1,8 @@
-"""麦麦年报 · 命令行入口
+"""麦麦倒带 · 命令行入口
 
-    python -m maimen_wrapped --demo
-    python -m maimen_wrapped --orders raw/orders.json --account raw/account.json -o report.html
-    python -m maimen_wrapped --demo --card --card-png          # 生成竖版分享卡（含 PNG）
+    python -m mcrewind --demo
+    python -m mcrewind --orders raw/orders.json --account raw/account.json -o report.html
+    python -m mcrewind --demo --card --card-png          # 生成竖版分享卡（含 PNG）
 
 设计要点：CLI 只做「读文件 → 分析 → 渲染 → 写文件」，
 不主动发起任何网络请求。所有 MCP 调用由 WorkBuddy 智能体完成，
@@ -105,14 +105,14 @@ def export_png(html_path: Path, png_path: Path, width: int, height: int) -> tupl
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="python -m maimen_wrapped",
+        prog="python -m mcrewind",
         description="把麦当劳 MCP 订单数据渲染成一份可分享的年度报告",
     )
     parser.add_argument("--orders", type=Path, help="order-list 工具返回的原始 JSON 文件路径")
     parser.add_argument("--account", type=Path, help="query-my-account 工具的原始 JSON 路径（可选）")
     parser.add_argument(
-        "--out", "-o", type=Path, default=Path("maimen-wrapped.html"),
-        help="输出 HTML 路径，默认 maimen-wrapped.html",
+        "--out", "-o", type=Path, default=Path("mcrewind.html"),
+        help="输出 HTML 路径，默认 mcrewind.html",
     )
     parser.add_argument("--demo", action="store_true", help="使用内置演示数据（无需 MCP Token）")
     parser.add_argument("--year", type=int, help="报告年份，默认取当前年份")
@@ -142,7 +142,7 @@ def main(argv: list[str] | None = None) -> int:
     else:
         print(
             "[提示] 请指定 --orders <文件>，或使用 --demo 查看示例报告。\n"
-            "       在 WorkBuddy 中直接说「生成我的麦麦年报」即可自动完成采集。",
+            "       在 WorkBuddy 中直接说「生成我的麦麦倒带」即可自动完成采集。",
             file=sys.stderr,
         )
         return 1

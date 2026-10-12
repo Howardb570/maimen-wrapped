@@ -1,13 +1,13 @@
 ---
-name: maimen-wrapped
+name: mcrewind
 description: >
-  生成「我的麦麦年报」——把麦当劳 MCP 返回的个人订单历史，变成一份可截图、
+  生成「我的麦麦倒带」——把麦当劳 MCP 返回的个人订单历史，变成一份可截图、
   可转发的单文件 HTML 年度报告，包含年度称号、口味画像、时段分布、渠道偏好、
   门店足迹和趣味徽章。当用户想看"我的麦当劳年报 / 消费总结 / 点餐画像 /
   我最爱点什么 / 我在麦当劳花了多少钱"等需求时使用。
 ---
 
-# 麦麦年报（MCD Wrapped）
+# 麦麦倒带（McRewind）
 
 你的任务：采集用户的麦当劳订单数据，调用本 Skill 的分析脚本，生成一份
 **单文件、零外部依赖**的 HTML 年报，并把它展示给用户。
@@ -15,7 +15,7 @@ description: >
 ## 第一步：采集数据（依次调用麦当劳 MCP 工具）
 
 按顺序调用以下工具，并把每个工具的**原始返回**分别写入临时目录
-（建议放在当前工作区的 `.maimen-wrapped-raw/` 下）：
+（建议放在当前工作区的 `.mcrewind-raw/` 下）：
 
 | 工具 | 存为 | 是否必需 |
 |---|---|---|
@@ -42,7 +42,7 @@ description: >
 在项目根目录执行：
 
 ```bash
-python -m maimen_wrapped --orders .maimen-wrapped-raw/orders.json --account .maimen-wrapped-raw/account.json --out 我的麦麦年报.html --card --card-png
+python -m mcrewind --orders .mcrewind-raw/orders.json --account .mcrewind-raw/account.json --out 我的麦麦倒带.html --card --card-png
 ```
 
 - `--card` 额外生成一张 1080×1440 竖版分享卡（`--card-ratio` 可选 `3:4` / `9:16` / `1:1`）
@@ -57,7 +57,7 @@ python -m maimen_wrapped --orders .maimen-wrapped-raw/orders.json --account .mai
 同时主动提供两个选项：
 
 1. 用 `--demo` 看一份演示年报（无需任何凭证）：
-   `python -m maimen_wrapped --demo --out demo.html`
+   `python -m mcrewind --demo --out demo.html`
 2. 用真实账号下过单之后，回来重新生成。
 
 ## 第四步：展示结果

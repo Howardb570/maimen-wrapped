@@ -6,7 +6,7 @@ __pycache__/
 venv/
 
 # 真实采集的数据 —— 绝对不要提交（可能含个人消费记录）
-.maimen-wrapped-raw/
+.mcrewind-raw/
 raw/
 *.orders.json
 *orders.json
@@ -15,6 +15,7 @@ raw/
 # 生成的报告
 *.html
 !examples/demo-report.html
+!examples/demo-card.html
 
 # 环境与密钥
 .env

@@ -1,6 +1,6 @@
 # MCP 集成说明（MCP_INTEGRATION.md）
 
-本文档说明麦麦年报（maimen-wrapped）实际使用的麦当劳 MCP Server、Tool、
+本文档说明麦麦倒带（mcrewind）实际使用的麦当劳 MCP Server、Tool、
 完整调用流程，以及这些能力带来的业务价值。
 
 ---
@@ -70,7 +70,7 @@
 ## 3. 调用流程
 
 ```text
-用户："生成我的麦麦年报"
+用户："生成我的麦麦倒带"
         │
         ▼
 ┌─────────────────────────────────────────┐
@@ -80,17 +80,17 @@
 │  mcp__mcd-mcp__query-my-account ─┤ 原始   │
 │  mcp__mcd-mcp__query-my-prizes  ─┘ JSON  │
 │        │                                 │
-│        ▼ 落盘到 .maimen-wrapped-raw/         │
+│        ▼ 落盘到 .mcrewind-raw/         │
 └─────────────────────────────────────────┘
         │
         ▼
 ┌─────────────────────────────────────────┐
 │ 阶段二：分析（本地 Python，完全离线）       │
 │                                         │
-│  python -m maimen_wrapped                   │
-│   --orders  .maimen-wrapped-raw/orders.json │
-│   --account .maimen-wrapped-raw/account.json│
-│   --out     我的麦麦年报.html             │
+│  python -m mcrewind                   │
+│   --orders  .mcrewind-raw/orders.json │
+│   --account .mcrewind-raw/account.json│
+│   --out     我的麦麦倒带.html             │
 │                                         │
 │  analyzer.py  → 聚合统计 + 字段容错       │
 │  persona.py   → 称号与徽章规则匹配        │

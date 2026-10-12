@@ -8,12 +8,12 @@
 ## 一、发布仓库（先做这个）
 
 ```bash
-cd maimen-wrapped
+cd mcrewind
 git init
 git add .
-git commit -m "feat: 麦麦年报 Maimen Wrapped v1.0"
+git commit -m "feat: 麦麦倒带 McRewind v1.0"
 git branch -M main
-git remote add origin https://github.com/<YOUR_GITHUB>/maimen-wrapped.git
+git remote add origin https://github.com/<YOUR_GITHUB>/mcrewind.git
 git push -u origin main
 ```
 
@@ -44,15 +44,15 @@ git push -u origin main
 ### Issue 标题
 
 ```text
-麦麦年报（Maimen Wrapped）：把你的麦当劳订单变成一张能截图发出去的年度报告
+麦麦倒带（McRewind）：把你的麦当劳订单变成一张能截图发出去的年度报告
 ```
 
 ### Issue 正文（原样复制，替换 URL）
 
 ```text
 【参赛申请】
-项目名称：麦麦年报
-项目地址：https://github.com/<YOUR_GITHUB>/maimen-wrapped
+项目名称：麦麦倒带
+项目地址：https://github.com/<YOUR_GITHUB>/mcrewind
 项目简介：这一年在麦当劳花了多少钱、几点吃最凶、最爱点什么——读取你的真实订单历史，在本地生成一份零外部依赖的单文件 HTML 年报与一张 1080×1440 竖版分享卡，可直接截图发社交媒体。
 ```
 
@@ -78,7 +78,7 @@ git push -u origin main
 系统可能对换行更敏感。把整个正文压成更紧凑的形态再试一次：
 
 ```text
-【参赛申请】项目名称：麦麦年报 项目地址：https://github.com/<YOUR_GITHUB>/maimen-wrapped 项目简介：（同上）
+【参赛申请】项目名称：麦麦倒带 项目地址：https://github.com/<YOUR_GITHUB>/mcrewind 项目简介：（同上）
 ```
 
 即所有内容在同一行、仅用空格分隔。两种都试过仍失败，

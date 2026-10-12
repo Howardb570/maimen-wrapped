@@ -1,8 +1,8 @@
-# 麦麦年报 · MCD Wrapped
+# 麦麦倒带 · McRewind
 
 > 你在麦当劳花了多少钱、最爱点什么、几点吃最凶——一份能直接截图发出去的年度报告。
 
-**麦麦年报**是一个基于麦当劳 MCP Server 的 Skill：它读取你的真实订单历史，
+**麦麦倒带**是一个基于麦当劳 MCP Server 的 Skill：它读取你的真实订单历史，
 在**本地**聚合成一份单文件 HTML 年报——年度称号、口味画像、24 小时下单热力、
 渠道偏好、门店足迹、趣味徽章，全部一屏看完。
 
@@ -24,7 +24,7 @@
 
 **"我这一年到底是个什么样的麦门用户？"**
 
-订单数据一直躺在账户里，从来没有被讲成故事。麦麦年报做的事情很简单——
+订单数据一直躺在账户里，从来没有被讲成故事。麦麦倒带做的事情很简单——
 把 `order-list` 返回的一串 JSON，变成一句你愿意截图的结论，比如：
 
 > **深夜麦门信徒** —— 有 36 单下在了 22 点之后，占全部订单的 31%。
@@ -49,12 +49,12 @@
 ### 方式一：零配置看效果（不需要 MCP Token）
 
 ```bash
-git clone https://github.com/Howardb570/maimen-wrapped.git
-cd maimen-wrapped
-python -m maimen_wrapped --demo --card --card-png
+git clone https://github.com/Howardb570/mcrewind.git
+cd mcrewind
+python -m mcrewind --demo --card --card-png
 ```
 
-一次生成两样东西：`maimen-wrapped.html`（完整年报）和 `maimen-wrapped-card.png`（竖版分享卡）。
+一次生成两样东西：`mcrewind.html`（完整年报）和 `mcrewind-card.png`（竖版分享卡）。
 
 ### 方式二：在 WorkBuddy 里一句话生成（推荐）
 
@@ -64,7 +64,7 @@ python -m maimen_wrapped --demo --card --card-png
 把本仓库的 `SKILL.md` 安装为 WorkBuddy 技能，然后在对话框里说：
 
 ```text
-生成我的麦麦年报
+生成我的麦麦倒带
 ```
 
 Skill 会自动完成：调 MCP 采集订单 → 写入临时目录 → 运行分析脚本 → 打开报告。
@@ -74,7 +74,7 @@ Skill 会自动完成：调 MCP 采集订单 → 写入临时目录 → 运行�
 如果你已经在别处拿到了 MCP 的返回结果，直接喂给 CLI：
 
 ```bash
-python -m maimen_wrapped --orders orders.json --account account.json --out my.html
+python -m mcrewind --orders orders.json --account account.json --out my.html
 ```
 
 `orders.json` 就是 `order-list` 工具的**原始返回**，不需要做任何预处理。
@@ -100,16 +100,16 @@ python -m maimen_wrapped --orders orders.json --account account.json --out my.ht
 
 ### 竖版分享卡
 
-年报本体是横向长页面，发到社交平台会被压缩得看不清。所以麦麦年报还会
+年报本体是横向长页面，发到社交平台会被压缩得看不清。所以麦麦倒带还会
 额外产出一张**定尺竖版卡**（默认 1080×1440，即 3:4）——只保留年度称号、
 三个核心数字、一条夜间热力条和最常点 Top 3。
 
 ![分享卡](examples/demo-card.png)
 
 ```bash
-python -m maimen_wrapped --orders orders.json --card --card-png            # 默认 3:4
-python -m maimen_wrapped --demo --card --card-ratio 9:16 --card-png        # 快拍竖版
-python -m maimen_wrapped --demo --card --card-ratio 1:1  --card-png        # 方图
+python -m mcrewind --orders orders.json --card --card-png            # 默认 3:4
+python -m mcrewind --demo --card --card-ratio 9:16 --card-png        # 快拍竖版
+python -m mcrewind --demo --card --card-ratio 1:1  --card-png        # 方图
 ```
 
 `--card-png` 会自动探测本机的 Edge / Chrome 做无头渲染导出 PNG；
@@ -120,9 +120,9 @@ python -m maimen_wrapped --demo --card --card-ratio 1:1  --card-png        # 方
 ## 项目结构
 
 ```text
-maimen-wrapped/
+mcrewind/
 ├── SKILL.md                  # WorkBuddy Skill 定义（智能体按此执行）
-├── maimen_wrapped/              # Python 包
+├── mcrewind/              # Python 包
 │   ├── __main__.py           # CLI 入口：读文件 → 分析 → 渲染 → 写文件
 │   ├── analyzer.py           # 聚合分析 + 字段容错
 │   ├── persona.py            # 称号与徽章规则（传播引擎）

@@ -1,4 +1,4 @@
-"""麦麦年报 · 竖版分享卡渲染
+"""麦麦倒带 · 竖版分享卡渲染
 
 为什么单独做一个分享卡：
     年报本体是横向长页面（约 3600px 高），发到社交平台会被压缩得看不清文字。
@@ -97,7 +97,7 @@ def render_share_card(
     stats: WrappedStats,
     ratio: str = "3:4",
     year: int | None = None,
-    brand: str = "麦麦年报",
+    brand: str = "麦麦倒带",
 ) -> str:
     """渲染一张固定尺寸的竖版分享卡 HTML。
 
@@ -197,7 +197,7 @@ def _card_shell(width: int, height: int, body: str) -> str:
         "<!DOCTYPE html>\n"
         '<html lang="zh-CN">\n<head>\n'
         '<meta charset="UTF-8">\n'
-        f"<title>麦麦年报 · 分享卡 {width}x{height}</title>\n"
+        f"<title>麦麦倒带 · 分享卡 {width}x{height}</title>\n"
         "<style>\n"
         "*{box-sizing:border-box}\n"
         "html,body{margin:0;padding:0;background:#16110E}\n"

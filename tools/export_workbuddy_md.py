@@ -154,6 +154,9 @@ REDACTIONS = [
     # 9. 历史回复里「workbuddy.md 还是占位模板」在当时成立，但对提交版读者是误导，
     #    补一个时间限定词，既不改事实也不产生歧义
     (r"还是占位模板", "当时还是占位模板"),
+    # 10. 逐词替换后产生的病句：原文是「硬编码了 <系统用户名> 和 <家目录路径>」，
+    #     被前几条规则拆散后读不通，改回自然表述
+    (r"硬编码了 `user` 和 `<本地路径>`", "硬编码了本机系统用户名与家目录路径"),
 ]
 
 
@@ -325,6 +328,9 @@ ROUND_TITLES = [
     "原型实现：年报生成器、分享卡、命名与报名文案",
     "收尾交付：导出 WorkBuddy 会话记录",
     "精简与脱敏：生成提交版 workbuddy.md",
+    "机制答疑：为什么发 Issue 就算报名",
+    "竞品扫描：509 个报名 Issue 全量分析",
+    "命名决策：全榜查重并更名为 mcrewind",
 ]
 
 
@@ -396,14 +402,16 @@ def render(
         w("> 已做**脱敏处理**：本地路径、会话标识、账号余额等信息已替换或泛化。")
     if brief:
         w(">")
-        w("> 读法提示：轮次 1–2 是项目从零到一的开发过程，")
-        w("> 轮次 3 是导出会话记录（当时的完整版），轮次 4 就是本文档的精简与脱敏过程。")
+        w("> 读法提示：轮次 1–2 是项目从零到一的开发过程；轮次 3 是导出会话记录")
+        w("> （当时的完整版），轮次 4 是本文档的精简与脱敏过程；轮次 5–6 转为报名机制")
+        w("> 答疑与全榜竞品扫描；轮次 7 依据查重结果，将项目由原定名 `maimen-wrapped`")
+        w("> 更名为 `mcrewind`（原定名与榜上已有项目重名）。")
     w("")
     w("## 会话元信息")
     w("")
     w("| 项目 | 内容 |")
     w("| --- | --- |")
-    w("| 参赛项目 | 麦麦年报（maimen-wrapped） |")
+    w("| 参赛项目 | 麦麦倒带（mcrewind） |")
     w("| 开发工具 | 腾讯 WorkBuddy 智能体 |")
     w("| 会话 ID | `{}` |".format(meta.get("session_id", "-")))
     w("| 会话日期 | {} |".format(meta.get("date", "-")))
@@ -539,7 +547,7 @@ def render(
             for e in rnd["items"]
         )
         if not has_body:
-            w("*本轮 WorkBuddy 的交付物即本文件本身。*")
+            w("*（本轮回复发生在本次导出之后，故此处无正文。）*")
             w("")
 
     w("---")
@@ -548,11 +556,11 @@ def render(
     w("")
     w("| 文件 | 说明 |")
     w("| --- | --- |")
-    w("| `maimen_wrapped/analyzer.py` | 订单数据聚合与字段容错 |")
-    w("| `maimen_wrapped/persona.py` | 称号与徽章规则（传播引擎） |")
-    w("| `maimen_wrapped/render.py` | 单文件 HTML 报告渲染（手写 SVG/CSS） |")
-    w("| `maimen_wrapped/sharecard.py` | 1080×1440 竖版分享卡 |")
-    w("| `maimen_wrapped/__main__.py` | CLI 入口，含无头浏览器 PNG 导出 |")
+    w("| `mcrewind/analyzer.py` | 订单数据聚合与字段容错 |")
+    w("| `mcrewind/persona.py` | 称号与徽章规则（传播引擎） |")
+    w("| `mcrewind/render.py` | 单文件 HTML 报告渲染（手写 SVG/CSS） |")
+    w("| `mcrewind/sharecard.py` | 1080×1440 竖版分享卡 |")
+    w("| `mcrewind/__main__.py` | CLI 入口，含无头浏览器 PNG 导出 |")
     w("| `tools/gen_demo.py` | 固定种子演示数据集生成器 |")
     w("| `tools/export_workbuddy_md.py` | 本文件的导出脚本（支持 `--brief` / `--redact`） |")
     w("| `tools/check_redaction.py` | 公开前的脱敏与凭证自检 |")

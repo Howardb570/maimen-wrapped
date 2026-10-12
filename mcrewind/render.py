@@ -1,4 +1,4 @@
-"""麦麦年报 · HTML 渲染模块
+"""麦麦倒带 · HTML 渲染模块
 
 设计取舍（很重要，写进 README 会加分）:
     报告输出为**单文件、零外部依赖**的 HTML。所有图表用手写 SVG / CSS 实现，
@@ -404,7 +404,7 @@ def render(stats: WrappedStats, year: int | None = None, generated_at: str | Non
         body = f"""
 <div class="hero">
   <div class="eyebrow">McDonald's Data Wrapped {year}</div>
-  <h1>我的 <span class="accent">麦麦年报</span></h1>
+  <h1>我的 <span class="accent">麦麦倒带</span></h1>
   <p class="subtitle">{esc(generated_at)} 生成</p>
 </div>
 <div class="empty">
@@ -416,10 +416,10 @@ def render(stats: WrappedStats, year: int | None = None, generated_at: str | Non
 </div>
 <div class="footer">
   数据来源：麦当劳 MCP Server（order-list / query-my-account）<br>
-  本报告由开源项目 <strong>maimen-wrapped</strong> 生成 · 非麦当劳官方产品
+  本报告由开源项目 <strong>mcrewind</strong> 生成 · 非麦当劳官方产品
 </div>
 """
-        return _shell(f"我的麦麦年报 {year}", body, stats)
+        return _shell(f"我的麦麦倒带 {year}", body, stats)
 
     # ---- 指标卡 ----
     avg_note = f"共 {stats.total_orders} 单"
@@ -524,7 +524,7 @@ def render(stats: WrappedStats, year: int | None = None, generated_at: str | Non
     body = f"""
 <div class="hero">
   <div class="eyebrow">McDonald's Data Wrapped {year}</div>
-  <h1>我的 <span class="accent">麦麦年报</span></h1>
+  <h1>我的 <span class="accent">麦麦倒带</span></h1>
   <p class="subtitle">{esc(generated_at)} 生成 · 数据截至 {esc(stats.last_order_time or "未知")}</p>
 </div>
 
@@ -548,11 +548,11 @@ def render(stats: WrappedStats, year: int | None = None, generated_at: str | Non
 
 <div class="footer">
   数据来源：麦当劳 MCP Server（order-list / query-my-account）<br>
-  本报告由开源项目 <strong>maimen-wrapped</strong> 生成 · 非麦当劳官方产品<br>
+  本报告由开源项目 <strong>mcrewind</strong> 生成 · 非麦当劳官方产品<br>
   所有数据仅在你的本地设备上生成，不上传任何服务器
 </div>
 """
-    return _shell(f"我的麦麦年报 {year}", body, stats)
+    return _shell(f"我的麦麦倒带 {year}", body, stats)
 
 
 def _safe_float(value: object) -> float:
