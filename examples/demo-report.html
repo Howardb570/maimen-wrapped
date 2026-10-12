@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>我的麦麦年报 2026</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #16110E;
+  color: #F5F1EC;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+               "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 24px 64px; }
+
+/* ---------- 封面 ---------- */
+.hero { padding: 72px 0 40px; }
+.hero .eyebrow {
+  font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: #7A7069; margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: 46px; line-height: 1.15; margin: 0 0 8px; font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.hero h1 .accent { color: #FFC72C; }
+.hero .subtitle { font-size: 15px; color: #A89E96; margin: 0 0 40px; }
+
+/* ---------- 称号卡 ---------- */
+.title-card {
+  background: linear-gradient(135deg, #2A211C 0%, #211A16 100%);
+  border: 1px solid rgba(255,199,44,0.28);
+  border-radius: 20px; padding: 32px; margin-bottom: 16px;
+}
+.title-card .label {
+  font-size: 12px; letter-spacing: 0.16em; color: #FFC72C;
+  text-transform: uppercase; margin-bottom: 12px;
+}
+.title-card .title-name {
+  font-size: 38px; font-weight: 600; margin: 0 0 12px; letter-spacing: -0.01em;
+}
+.title-card .reason { font-size: 15px; color: #A89E96; margin: 0; }
+
+/* ---------- 区块 ---------- */
+.section { margin-top: 56px; }
+.section-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 20px; }
+.section-head h2 { font-size: 20px; font-weight: 600; margin: 0; }
+.section-head .hint { font-size: 13px; color: #7A7069; }
+
+/* ---------- 指标卡 ---------- */
+.metrics { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+.metric {
+  background: #211A16; border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 14px; padding: 20px;
+}
+.metric .k { font-size: 13px; color: #A89E96; margin-bottom: 8px; }
+.metric .v { font-size: 30px; font-weight: 600; letter-spacing: -0.02em; }
+.metric .v .unit { font-size: 15px; font-weight: 400; color: #A89E96; margin-left: 4px; }
+.metric .note { font-size: 12px; color: #7A7069; margin-top: 6px; }
+
+/* ---------- 商品条 ---------- */
+.bars { display: flex; flex-direction: column; gap: 14px; }
+.bar-row .top { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 6px; }
+.bar-row .top .name { color: #F5F1EC; }
+.bar-row .top .count { color: #A89E96; font-variant-numeric: tabular-nums; }
+.bar-track { height: 8px; background: #2A211C; border-radius: 4px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 4px; background: #DA291C; }
+
+/* ---------- 图表 ---------- */
+.chart-box {
+  background: #211A16; border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 14px; padding: 20px;
+}
+.chart-box svg { display: block; width: 100%; height: auto; }
+
+/* ---------- 渠道环 ---------- */
+.donut-row { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
+.donut { width: 148px; height: 148px; border-radius: 50%; position: relative; flex: 0 0 auto; }
+.donut::after {
+  content: ""; position: absolute; inset: 26px; border-radius: 50%; background: #211A16;
+}
+.donut-center {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; z-index: 2;
+}
+.donut-center .n { font-size: 24px; font-weight: 600; line-height: 1.1; }
+.donut-center .l { font-size: 11px; color: #7A7069; }
+.legend { display: flex; flex-direction: column; gap: 10px; flex: 1 1 200px; min-width: 0; }
+.legend-item { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+.legend-item .dot { width: 10px; height: 10px; border-radius: 3px; flex: 0 0 auto; }
+.legend-item .nm { flex: 1; color: #F5F1EC; }
+.legend-item .pc { color: #A89E96; font-variant-numeric: tabular-nums; }
+
+/* ---------- 徽章墙 ---------- */
+.badges { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.badge {
+  background: #211A16; border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 14px; padding: 18px;
+}
+.badge .ic { width: 34px; height: 34px; margin-bottom: 12px; }
+.badge .bn { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+.badge .bd { font-size: 13px; color: #A89E96; }
+
+/* ---------- 列表 ---------- */
+.rank-list { display: flex; flex-direction: column; }
+.rank-item {
+  display: flex; align-items: center; gap: 14px; padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.09);
+}
+.rank-item:last-child { border-bottom: none; }
+.rank-item .idx {
+  width: 26px; height: 26px; border-radius: 7px; background: #2A211C;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; color: #A89E96; flex: 0 0 auto;
+}
+.rank-item .nm { flex: 1; font-size: 14px; min-width: 0;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rank-item .ct { font-size: 14px; color: #A89E96; font-variant-numeric: tabular-nums; }
+
+/* ---------- 空状态 ---------- */
+.empty {
+  background: #211A16; border: 1px dashed rgba(255,199,44,0.35);
+  border-radius: 16px; padding: 40px 28px; text-align: center;
+}
+.empty .e-t { font-size: 18px; font-weight: 600; margin-bottom: 10px; }
+.empty .e-d { font-size: 14px; color: #A89E96; margin: 0 auto; max-width: 460px; }
+
+/* ---------- 页脚 ---------- */
+.footer {
+  margin-top: 64px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.09);
+  font-size: 12px; color: #7A7069; line-height: 1.8;
+}
+.footer a { color: #A89E96; }
+
+@media (max-width: 560px) {
+  .hero h1 { font-size: 34px; }
+  .hero { padding: 48px 0 32px; }
+  .metrics { grid-template-columns: minmax(0,1fr); }
+  .donut-row { justify-content: center; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="hero">
+  <div class="eyebrow">McDonald's Data Wrapped 2026</div>
+  <h1>我的 <span class="accent">麦麦年报</span></h1>
+  <p class="subtitle">2026-10-12 10:46 生成 · 数据截至 2026-10-09 21:01</p>
+</div>
+
+<div class="title-card">
+  <div class="label">你的年度称号</div>
+  <div class="title-name">深夜麦门信徒</div>
+  <p class="reason">有 36 单下在了 22 点之后，占全部订单的 31%。</p>
+</div>
+
+<div class="section">
+  <div class="metrics"><div class="metric"><div class="k">年度订单</div><div class="v">117<span class="unit">单</span></div><div class="note">平均 2 天点一次</div></div><div class="metric"><div class="k">年度消费</div><div class="v">3307.35<span class="unit">元</span></div><div class="note">共 117 单</div></div><div class="metric"><div class="k">单均消费</div><div class="v">28.27<span class="unit">元</span></div><div class="note">每次大约花这么多</div></div><div class="metric"><div class="k">最大单笔</div><div class="v">58.17<span class="unit">元</span></div><div class="note">早餐全餐×2 + 麦乐鸡(5块)</div></div></div>
+</div>
+
+<div class="section"><div class="section-head"><h2>你的口味画像</h2><span class="hint">一共尝过 23 种餐品</span></div><div class="bars"><div class="bar-row"><div class="top"><span class="name">巨无霸</span><span class="count">26 份</span></div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div></div><div class="bar-row"><div class="top"><span class="name">双层吉士汉堡</span><span class="count">24 份</span></div><div class="bar-track"><div class="bar-fill" style="width:92%"></div></div></div><div class="bar-row"><div class="top"><span class="name">板烧鸡腿堡</span><span class="count">21 份</span></div><div class="bar-track"><div class="bar-fill" style="width:81%"></div></div></div><div class="bar-row"><div class="top"><span class="name">麦辣鸡腿堡</span><span class="count">19 份</span></div><div class="bar-track"><div class="bar-fill" style="width:73%"></div></div></div><div class="bar-row"><div class="top"><span class="name">麦香鱼</span><span class="count">15 份</span></div><div class="bar-track"><div class="bar-fill" style="width:58%"></div></div></div></div></div><div class="section"><div class="section-head"><h2>你几点吃麦当劳</h2><span class="hint">最常下单时间是 19:00</span></div><div class="chart-box"><svg viewBox="0 0 660 170" role="img" aria-label="24 小时下单分布柱状图，黄色柱为夜间时段"><rect x="5.8" y="96.0" width="15.9" height="40.0" rx="2" fill="#FFC72C" opacity="1"/><text x="13.8" y="90.0" text-anchor="middle" font-size="10" fill="#A89E96">4</text><rect x="33.3" y="116.0" width="15.9" height="20.0" rx="2" fill="#FFC72C" opacity="1"/><text x="41.2" y="110.0" text-anchor="middle" font-size="10" fill="#A89E96">2</text><rect x="60.8" y="66.0" width="15.9" height="70.0" rx="2" fill="#FFC72C" opacity="1"/><text x="68.8" y="60.0" text-anchor="middle" font-size="10" fill="#A89E96">7</text><rect x="88.3" y="56.0" width="15.9" height="80.0" rx="2" fill="#FFC72C" opacity="1"/><text x="96.2" y="50.0" text-anchor="middle" font-size="10" fill="#A89E96">8</text><rect x="115.8" y="76.0" width="15.9" height="60.0" rx="2" fill="#FFC72C" opacity="1"/><text x="123.8" y="70.0" text-anchor="middle" font-size="10" fill="#A89E96">6</text><rect x="143.3" y="46.0" width="15.9" height="90.0" rx="2" fill="#DA291C" opacity="1"/><text x="151.2" y="40.0" text-anchor="middle" font-size="10" fill="#A89E96">9</text><rect x="170.8" y="66.0" width="15.9" height="70.0" rx="2" fill="#DA291C" opacity="1"/><text x="178.8" y="60.0" text-anchor="middle" font-size="10" fill="#A89E96">7</text><rect x="198.3" y="106.0" width="15.9" height="30.0" rx="2" fill="#DA291C" opacity="1"/><text x="206.2" y="100.0" text-anchor="middle" font-size="10" fill="#A89E96">3</text><rect x="225.8" y="126.0" width="15.9" height="10.0" rx="2" fill="#DA291C" opacity="1"/><text x="233.8" y="120.0" text-anchor="middle" font-size="10" fill="#A89E96">1</text><rect x="253.3" y="126.0" width="15.9" height="10.0" rx="2" fill="#DA291C" opacity="1"/><text x="261.2" y="120.0" text-anchor="middle" font-size="10" fill="#A89E96">1</text><rect x="280.8" y="116.0" width="15.9" height="20.0" rx="2" fill="#DA291C" opacity="1"/><text x="288.8" y="110.0" text-anchor="middle" font-size="10" fill="#A89E96">2</text><rect x="308.3" y="136.0" width="15.9" height="2.0" rx="2" fill="#DA291C" opacity="0.18"/><rect x="335.8" y="126.0" width="15.9" height="10.0" rx="2" fill="#DA291C" opacity="1"/><text x="343.8" y="120.0" text-anchor="middle" font-size="10" fill="#A89E96">1</text><rect x="363.3" y="96.0" width="15.9" height="40.0" rx="2" fill="#DA291C" opacity="1"/><text x="371.2" y="90.0" text-anchor="middle" font-size="10" fill="#A89E96">4</text><rect x="390.8" y="106.0" width="15.9" height="30.0" rx="2" fill="#DA291C" opacity="1"/><text x="398.8" y="100.0" text-anchor="middle" font-size="10" fill="#A89E96">3</text><rect x="418.3" y="86.0" width="15.9" height="50.0" rx="2" fill="#DA291C" opacity="1"/><text x="426.2" y="80.0" text-anchor="middle" font-size="10" fill="#A89E96">5</text><rect x="445.8" y="56.0" width="15.9" height="80.0" rx="2" fill="#DA291C" opacity="1"/><text x="453.8" y="50.0" text-anchor="middle" font-size="10" fill="#A89E96">8</text><rect x="473.3" y="76.0" width="15.9" height="60.0" rx="2" fill="#DA291C" opacity="1"/><text x="481.2" y="70.0" text-anchor="middle" font-size="10" fill="#A89E96">6</text><rect x="500.8" y="116.0" width="15.9" height="20.0" rx="2" fill="#DA291C" opacity="1"/><text x="508.8" y="110.0" text-anchor="middle" font-size="10" fill="#A89E96">2</text><rect x="528.3" y="16.0" width="15.9" height="120.0" rx="2" fill="#DA291C" opacity="1"/><text x="536.2" y="10.0" text-anchor="middle" font-size="10" fill="#A89E96">12</text><rect x="555.8" y="56.0" width="15.9" height="80.0" rx="2" fill="#DA291C" opacity="1"/><text x="563.8" y="50.0" text-anchor="middle" font-size="10" fill="#A89E96">8</text><rect x="583.3" y="46.0" width="15.9" height="90.0" rx="2" fill="#DA291C" opacity="1"/><text x="591.2" y="40.0" text-anchor="middle" font-size="10" fill="#A89E96">9</text><rect x="610.8" y="106.0" width="15.9" height="30.0" rx="2" fill="#FFC72C" opacity="1"/><text x="618.8" y="100.0" text-anchor="middle" font-size="10" fill="#A89E96">3</text><rect x="638.3" y="76.0" width="15.9" height="60.0" rx="2" fill="#FFC72C" opacity="1"/><text x="646.2" y="70.0" text-anchor="middle" font-size="10" fill="#A89E96">6</text><text x="13.8" y="156.0" text-anchor="middle" font-size="11" fill="#7A7069">00:00</text><text x="178.8" y="156.0" text-anchor="middle" font-size="11" fill="#7A7069">06:00</text><text x="343.8" y="156.0" text-anchor="middle" font-size="11" fill="#7A7069">12:00</text><text x="508.8" y="156.0" text-anchor="middle" font-size="11" fill="#7A7069">18:00</text><text x="646.2" y="156.0" text-anchor="middle" font-size="11" fill="#7A7069">23:00</text></svg></div></div><div class="section"><div class="section-head"><h2>一周里的规律</h2><span class="hint">周四是你的高频日</span></div><div class="chart-box"><svg viewBox="0 0 660 160" role="img" aria-label="一周七天订单分布柱状图，黄色柱为下单最多的一天"><rect x="27.3" y="71.5" width="39.6" height="58.5" rx="3" fill="#DA291C" opacity="1"/><text x="47.1" y="64.5" text-anchor="middle" font-size="11" fill="#A89E96">13</text><text x="47.1" y="150.0" text-anchor="middle" font-size="12" fill="#7A7069">周一</text><rect x="121.6" y="80.5" width="39.6" height="49.5" rx="3" fill="#DA291C" opacity="1"/><text x="141.4" y="73.5" text-anchor="middle" font-size="11" fill="#A89E96">11</text><text x="141.4" y="150.0" text-anchor="middle" font-size="12" fill="#7A7069">周二</text><rect x="215.9" y="76.0" width="39.6" height="54.0" rx="3" fill="#DA291C" opacity="1"/><text x="235.7" y="69.0" text-anchor="middle" font-size="11" fill="#A89E96">12</text><text x="235.7" y="150.0" text-anchor="middle" font-size="12" fill="#7A7069">周三</text><rect x="310.2" y="22.0" width="39.6" height="108.0" rx="3" fill="#FFC72C" opacity="1"/><text x="330.0" y="15.0" text-anchor="middle" font-size="11" fill="#A89E96">24</text><text x="330.0" y="150.0" text-anchor="middle" font-size="12" fill="#7A7069">周四</text><rect x="404.5" y="49.0" width="39.6" height="81.0" rx="3" fill="#DA291C" opacity="1"/><text x="424.3" y="42.0" text-anchor="middle" font-size="11" fill="#A89E96">18</text><text x="424.3" y="150.0" text-anchor="middle" font-size="12" fill="#7A7069">周五</text><rect x="498.8" y="26.5" width="39.6" height="103.5" rx="3" fill="#DA291C" opacity="1"/><text x="518.6" y="19.5" text-anchor="middle" font-size="11" fill="#A89E96">23</text><text x="518.6" y="150.0" text-anchor="middle" font-size="12" fill="#7A7069">周六</text><rect x="593.1" y="58.0" width="39.6" height="72.0" rx="3" fill="#DA291C" opacity="1"/><text x="612.9" y="51.0" text-anchor="middle" font-size="11" fill="#A89E96">16</text><text x="612.9" y="150.0" text-anchor="middle" font-size="12" fill="#7A7069">周日</text></svg></div></div><div class="section"><div class="section-head"><h2>你怎么吃</h2><span class="hint">到店 / 外送 / 得来速偏好</span></div><div class="chart-box"><div class="donut-row"><div class="donut" style="background: conic-gradient(#DA291C 0.00% 52.14%, #FFC72C 52.14% 88.03%, #5DCAA5 88.03% 100.00%)" role="img" aria-label="渠道占比环形图"><div class="donut-center"><div class="n">117</div><div class="l">总订单</div></div></div><div class="legend"><div class="legend-item"><span class="dot" style="background:#DA291C"></span><span class="nm">到店自取</span><span class="pc">61 单 · 52%</span></div><div class="legend-item"><span class="dot" style="background:#FFC72C"></span><span class="nm">麦乐送</span><span class="pc">42 单 · 36%</span></div><div class="legend-item"><span class="dot" style="background:#5DCAA5"></span><span class="nm">得来速</span><span class="pc">14 单 · 12%</span></div></div></div></div></div><div class="section"><div class="section-head"><h2>你的门店足迹</h2><span class="hint">一共去过 9 家</span></div><div class="chart-box"><div class="rank-list"><div class="rank-item"><div class="idx">1</div><div class="nm">麦当劳(西直门凯德店)</div><div class="ct">23 单</div></div><div class="rank-item"><div class="idx">2</div><div class="nm">麦当劳(北京南站店)</div><div class="ct">18 单</div></div><div class="rank-item"><div class="idx">3</div><div class="nm">麦当劳(清华科技园店)</div><div class="ct">15 单</div></div><div class="rank-item"><div class="idx">4</div><div class="nm">麦当劳(五道口购物中心店)</div><div class="ct">13 单</div></div><div class="rank-item"><div class="idx">5</div><div class="nm">麦当劳(知春路店)</div><div class="ct">12 单</div></div></div></div></div><div class="section"><div class="section-head"><h2>集齐的徽章</h2><span class="hint">共 6 枚</span></div><div class="badges"><div class="badge"><svg class="ic" viewBox="0 0 32 32" fill="none" stroke="#FFC72C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-hidden="true"><path d="M20 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg><div class="bn">夜宵战神</div><div class="bd">22 点后下单 36 次</div></div><div class="badge"><svg class="ic" viewBox="0 0 32 32" fill="none" stroke="#FFC72C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-hidden="true"><circle cx="16" cy="16" r="5"/><path d="M16 3v3M16 26v3M3 16h3M26 16h3M7 7l2 2M23 23l2 2M25 7l-2 2M9 23l-2 2"/></svg><div class="bn">早起鸟</div><div class="bd">早餐时段 21 单</div></div><div class="badge"><svg class="ic" viewBox="0 0 32 32" fill="none" stroke="#FFC72C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-hidden="true"><circle cx="16" cy="16" r="11"/><path d="M16 9v7l5 3"/></svg><div class="bn">19:00 党</div><div class="bd">最常在这个点下单，共 12 单</div></div><div class="badge"><svg class="ic" viewBox="0 0 32 32" fill="none" stroke="#FFC72C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-hidden="true"><path d="M16 4l3.6 7.6 8.4 1.1-6.1 5.8 1.5 8.3L16 23l-7.4 3.8 1.5-8.3L4 12.7l8.4-1.1z"/></svg><div class="bn">巨无霸死忠粉</div><div class="bd">一年点了 26 份</div></div><div class="badge"><svg class="ic" viewBox="0 0 32 32" fill="none" stroke="#FFC72C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-hidden="true"><circle cx="8" cy="23" r="3"/><circle cx="24" cy="9" r="3"/><path d="M11 23h7a4 4 0 0 0 4-4v-5"/></svg><div class="bn">线下打卡派</div><div class="bd">到店自取 占 52%</div></div><div class="badge"><svg class="ic" viewBox="0 0 32 32" fill="none" stroke="#FFC72C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-hidden="true"><path d="M16 28s9-8.5 9-14a9 9 0 0 0-18 0c0 5.5 9 14 9 14z"/><circle cx="16" cy="13" r="3"/></svg><div class="bn">门店收集者</div><div class="bd">去过 9 家门店</div></div></div></div>
+<div class="section"><div class="section-head"><h2>麦享会积分</h2></div><div class="metrics"><div class="metric"><div class="k">可用积分</div><div class="v">386.50</div></div><div class="metric"><div class="k">累计积分</div><div class="v">2418</div></div></div></div>
+
+<div class="section">
+  <div class="section-head"><h2>这一年</h2></div>
+  <div class="chart-box" style="font-size:14px;color:#A89E96;line-height:1.9">2026-01-06 21:07 起 · 到 2026-10-09 21:01 止<br>这期间你有 94 天下过单</div>
+</div>
+
+<div class="footer">
+  数据来源：麦当劳 MCP Server（order-list / query-my-account）<br>
+  本报告由开源项目 <strong>mcd-wrapped</strong> 生成 · 非麦当劳官方产品<br>
+  所有数据仅在你的本地设备上生成，不上传任何服务器
+</div>
+</div>
+</body>
+</html>

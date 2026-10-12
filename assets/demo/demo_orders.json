@@ -1,0 +1,2772 @@
+{
+  "success": true,
+  "code": 200,
+  "message": "请求成功（演示数据）",
+  "data": {
+    "list": [
+      {
+        "orderId": "1030108270000795607354880001",
+        "orderType": "1",
+        "createTime": "2026-01-06 21:07:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001001",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1127",
+            "productName": "橙汁",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "28.46"
+      },
+      {
+        "orderId": "1030108270000795607354880002",
+        "orderType": "1",
+        "createTime": "2026-01-09 06:12:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001002",
+        "storeName": "麦当劳(首都机场T3店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1043",
+            "productName": "早餐全餐",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1064",
+            "productName": "麦乐鸡(5块)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "34.10"
+      },
+      {
+        "orderId": "1030108270000795607354880003",
+        "orderType": "1",
+        "createTime": "2026-01-11 21:17:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001003",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1071",
+            "productName": "中薯条",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "29.80"
+      },
+      {
+        "orderId": "1030108270000795607354880004",
+        "orderType": "1",
+        "createTime": "2026-01-14 17:19:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001004",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "20.73"
+      },
+      {
+        "orderId": "1030108270000795607354880005",
+        "orderType": "1",
+        "createTime": "2026-01-24 04:29:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001005",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 2,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "35.61"
+      },
+      {
+        "orderId": "1030108270000795607354880006",
+        "orderType": "1",
+        "createTime": "2026-01-26 03:47:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001006",
+        "storeName": "麦当劳(清华科技园店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1029",
+            "productName": "麦香鱼",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1127",
+            "productName": "橙汁",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "25.51"
+      },
+      {
+        "orderId": "1030108270000795607354880007",
+        "orderType": "1",
+        "createTime": "2026-01-27 20:56:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001007",
+        "storeName": "麦当劳(知春路店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1141",
+            "productName": "美式咖啡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "31.25"
+      },
+      {
+        "orderId": "1030108270000795607354880008",
+        "orderType": "1",
+        "createTime": "2026-01-29 20:21:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001008",
+        "storeName": "麦当劳(三里屯太古里店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1029",
+            "productName": "麦香鱼",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1071",
+            "productName": "中薯条",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "24.77"
+      },
+      {
+        "orderId": "1030108270000795607354880009",
+        "orderType": "2",
+        "createTime": "2026-01-31 05:58:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001009",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1043",
+            "productName": "早餐全餐",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "23.67"
+      },
+      {
+        "orderId": "1030108270000795607354880010",
+        "orderType": "1",
+        "createTime": "2026-02-02 02:07:00",
+        "beType": "5",
+        "beCode": "BE1010",
+        "storeCode": "1001010",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "21.90"
+      },
+      {
+        "orderId": "1030108270000795607354880011",
+        "orderType": "1",
+        "createTime": "2026-02-02 19:47:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001011",
+        "storeName": "麦当劳(清华科技园店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1141",
+            "productName": "美式咖啡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "30.73"
+      },
+      {
+        "orderId": "1030108270000795607354880012",
+        "orderType": "1",
+        "createTime": "2026-02-05 15:46:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001012",
+        "storeName": "麦当劳(三里屯太古里店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1071",
+            "productName": "中薯条",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "31.17"
+      },
+      {
+        "orderId": "1030108270000795607354880013",
+        "orderType": "2",
+        "createTime": "2026-02-09 16:21:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001013",
+        "storeName": "麦当劳(清华科技园店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 2,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "41.88"
+      },
+      {
+        "orderId": "1030108270000795607354880014",
+        "orderType": "1",
+        "createTime": "2026-02-12 02:52:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001014",
+        "storeName": "麦当劳(望京SOHO店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1071",
+            "productName": "中薯条",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "30.87"
+      },
+      {
+        "orderId": "1030108270000795607354880015",
+        "orderType": "2",
+        "createTime": "2026-02-14 02:55:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001015",
+        "storeName": "麦当劳(清华科技园店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "19.05"
+      },
+      {
+        "orderId": "1030108270000795607354880016",
+        "orderType": "1",
+        "createTime": "2026-02-14 06:23:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001016",
+        "storeName": "麦当劳(三里屯太古里店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1050",
+            "productName": "热香饼",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1099",
+            "productName": "香芋派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "21.01"
+      },
+      {
+        "orderId": "1030108270000795607354880017",
+        "orderType": "1",
+        "createTime": "2026-02-14 14:07:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001017",
+        "storeName": "麦当劳(五道口购物中心店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1029",
+            "productName": "麦香鱼",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "14.32"
+      },
+      {
+        "orderId": "1030108270000795607354880018",
+        "orderType": "1",
+        "createTime": "2026-02-16 17:12:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001018",
+        "storeName": "麦当劳(三里屯太古里店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1099",
+            "productName": "香芋派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "28.05"
+      },
+      {
+        "orderId": "1030108270000795607354880019",
+        "orderType": "1",
+        "createTime": "2026-02-16 21:40:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001019",
+        "storeName": "麦当劳(望京SOHO店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1099",
+            "productName": "香芋派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "27.67"
+      },
+      {
+        "orderId": "1030108270000795607354880020",
+        "orderType": "2",
+        "createTime": "2026-02-19 20:02:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001020",
+        "storeName": "麦当劳(五道口购物中心店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1134",
+            "productName": "拿铁",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "36.88"
+      },
+      {
+        "orderId": "1030108270000795607354880021",
+        "orderType": "1",
+        "createTime": "2026-02-20 02:21:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001021",
+        "storeName": "麦当劳(三里屯太古里店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1127",
+            "productName": "橙汁",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "30.51"
+      },
+      {
+        "orderId": "1030108270000795607354880022",
+        "orderType": "2",
+        "createTime": "2026-02-20 21:51:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001022",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1120",
+            "productName": "雪碧(中)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "29.85"
+      },
+      {
+        "orderId": "1030108270000795607354880023",
+        "orderType": "1",
+        "createTime": "2026-02-21 18:49:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001023",
+        "storeName": "麦当劳(三里屯太古里店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1029",
+            "productName": "麦香鱼",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1134",
+            "productName": "拿铁",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "32.31"
+      },
+      {
+        "orderId": "1030108270000795607354880024",
+        "orderType": "1",
+        "createTime": "2026-02-22 19:10:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001024",
+        "storeName": "麦当劳(首都机场T3店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1113",
+            "productName": "可乐(大)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "32.93"
+      },
+      {
+        "orderId": "1030108270000795607354880025",
+        "orderType": "2",
+        "createTime": "2026-02-28 04:43:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001025",
+        "storeName": "麦当劳(清华科技园店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1092",
+            "productName": "苹果派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "28.42"
+      },
+      {
+        "orderId": "1030108270000795607354880026",
+        "orderType": "2",
+        "createTime": "2026-03-02 04:04:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001026",
+        "storeName": "麦当劳(五道口购物中心店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1029",
+            "productName": "麦香鱼",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "13.91"
+      },
+      {
+        "orderId": "1030108270000795607354880027",
+        "orderType": "2",
+        "createTime": "2026-03-04 04:25:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001027",
+        "storeName": "麦当劳(清华科技园店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1106",
+            "productName": "可乐(中)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "27.10"
+      },
+      {
+        "orderId": "1030108270000795607354880028",
+        "orderType": "1",
+        "createTime": "2026-03-05 19:23:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001028",
+        "storeName": "麦当劳(首都机场T3店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1092",
+            "productName": "苹果派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "29.01"
+      },
+      {
+        "orderId": "1030108270000795607354880029",
+        "orderType": "2",
+        "createTime": "2026-03-13 05:13:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001029",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1036",
+            "productName": "猪柳蛋麦满分",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1099",
+            "productName": "香芋派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "23.61"
+      },
+      {
+        "orderId": "1030108270000795607354880030",
+        "orderType": "1",
+        "createTime": "2026-03-19 19:57:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001030",
+        "storeName": "麦当劳(三里屯太古里店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1064",
+            "productName": "麦乐鸡(5块)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "31.65"
+      },
+      {
+        "orderId": "1030108270000795607354880031",
+        "orderType": "1",
+        "createTime": "2026-03-20 20:18:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001031",
+        "storeName": "麦当劳(清华科技园店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1134",
+            "productName": "拿铁",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "37.40"
+      },
+      {
+        "orderId": "1030108270000795607354880032",
+        "orderType": "1",
+        "createTime": "2026-03-25 06:48:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001032",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1050",
+            "productName": "热香饼",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1134",
+            "productName": "拿铁",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "29.81"
+      },
+      {
+        "orderId": "1030108270000795607354880033",
+        "orderType": "2",
+        "createTime": "2026-03-25 10:59:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001033",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1092",
+            "productName": "苹果派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "26.74"
+      },
+      {
+        "orderId": "1030108270000795607354880034",
+        "orderType": "1",
+        "createTime": "2026-03-29 19:31:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001034",
+        "storeName": "麦当劳(三里屯太古里店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1078",
+            "productName": "大薯条",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "33.57"
+      },
+      {
+        "orderId": "1030108270000795607354880035",
+        "orderType": "1",
+        "createTime": "2026-04-02 03:28:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001035",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1085",
+            "productName": "玉米杯",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "29.51"
+      },
+      {
+        "orderId": "1030108270000795607354880036",
+        "orderType": "1",
+        "createTime": "2026-04-04 02:39:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001036",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 2,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1078",
+            "productName": "大薯条",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "53.63"
+      },
+      {
+        "orderId": "1030108270000795607354880037",
+        "orderType": "1",
+        "createTime": "2026-04-08 17:47:00",
+        "beType": "5",
+        "beCode": "BE1037",
+        "storeCode": "1001037",
+        "storeName": "麦当劳(三里屯太古里店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1057",
+            "productName": "麦辣鸡翅",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "31.79"
+      },
+      {
+        "orderId": "1030108270000795607354880038",
+        "orderType": "1",
+        "createTime": "2026-04-08 22:03:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001038",
+        "storeName": "麦当劳(中关村大街店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "21.43"
+      },
+      {
+        "orderId": "1030108270000795607354880039",
+        "orderType": "1",
+        "createTime": "2026-04-10 16:40:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001039",
+        "storeName": "麦当劳(望京SOHO店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1099",
+            "productName": "香芋派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "24.77"
+      },
+      {
+        "orderId": "1030108270000795607354880040",
+        "orderType": "1",
+        "createTime": "2026-04-12 03:15:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001040",
+        "storeName": "麦当劳(首都机场T3店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1092",
+            "productName": "苹果派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "29.84"
+      },
+      {
+        "orderId": "1030108270000795607354880041",
+        "orderType": "2",
+        "createTime": "2026-04-24 05:03:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001041",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1036",
+            "productName": "猪柳蛋麦满分",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1092",
+            "productName": "苹果派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "24.02"
+      },
+      {
+        "orderId": "1030108270000795607354880042",
+        "orderType": "2",
+        "createTime": "2026-04-26 00:23:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001042",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1029",
+            "productName": "麦香鱼",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "13.97"
+      },
+      {
+        "orderId": "1030108270000795607354880043",
+        "orderType": "1",
+        "createTime": "2026-05-01 21:18:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001043",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1099",
+            "productName": "香芋派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "25.56"
+      },
+      {
+        "orderId": "1030108270000795607354880044",
+        "orderType": "1",
+        "createTime": "2026-05-03 16:44:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001044",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1113",
+            "productName": "可乐(大)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "30.28"
+      },
+      {
+        "orderId": "1030108270000795607354880045",
+        "orderType": "1",
+        "createTime": "2026-05-10 19:45:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001045",
+        "storeName": "麦当劳(知春路店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "19.97"
+      },
+      {
+        "orderId": "1030108270000795607354880046",
+        "orderType": "1",
+        "createTime": "2026-05-12 19:28:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001046",
+        "storeName": "麦当劳(首都机场T3店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1029",
+            "productName": "麦香鱼",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "14.77"
+      },
+      {
+        "orderId": "1030108270000795607354880047",
+        "orderType": "1",
+        "createTime": "2026-05-12 23:45:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001047",
+        "storeName": "麦当劳(中关村大街店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1085",
+            "productName": "玉米杯",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1148",
+            "productName": "麦旋风",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "38.34"
+      },
+      {
+        "orderId": "1030108270000795607354880048",
+        "orderType": "2",
+        "createTime": "2026-05-17 05:15:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001048",
+        "storeName": "麦当劳(五道口购物中心店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1050",
+            "productName": "热香饼",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "13.11"
+      },
+      {
+        "orderId": "1030108270000795607354880049",
+        "orderType": "1",
+        "createTime": "2026-05-18 13:31:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001049",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1127",
+            "productName": "橙汁",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "30.11"
+      },
+      {
+        "orderId": "1030108270000795607354880050",
+        "orderType": "1",
+        "createTime": "2026-05-18 16:42:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001050",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "17.82"
+      },
+      {
+        "orderId": "1030108270000795607354880051",
+        "orderType": "2",
+        "createTime": "2026-05-22 00:42:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001051",
+        "storeName": "麦当劳(中关村大街店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1029",
+            "productName": "麦香鱼",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1057",
+            "productName": "麦辣鸡翅",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "27.47"
+      },
+      {
+        "orderId": "1030108270000795607354880052",
+        "orderType": "2",
+        "createTime": "2026-05-23 14:37:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001052",
+        "storeName": "麦当劳(五道口购物中心店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1092",
+            "productName": "苹果派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "24.43"
+      },
+      {
+        "orderId": "1030108270000795607354880053",
+        "orderType": "1",
+        "createTime": "2026-05-27 20:51:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001053",
+        "storeName": "麦当劳(望京SOHO店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "19.81"
+      },
+      {
+        "orderId": "1030108270000795607354880054",
+        "orderType": "2",
+        "createTime": "2026-05-28 05:18:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001054",
+        "storeName": "麦当劳(知春路店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1036",
+            "productName": "猪柳蛋麦满分",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "15.28"
+      },
+      {
+        "orderId": "1030108270000795607354880055",
+        "orderType": "2",
+        "createTime": "2026-05-30 04:28:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001055",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1029",
+            "productName": "麦香鱼",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1085",
+            "productName": "玉米杯",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "24.47"
+      },
+      {
+        "orderId": "1030108270000795607354880056",
+        "orderType": "2",
+        "createTime": "2026-06-04 05:16:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001056",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1043",
+            "productName": "早餐全餐",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1113",
+            "productName": "可乐(大)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "33.57"
+      },
+      {
+        "orderId": "1030108270000795607354880057",
+        "orderType": "1",
+        "createTime": "2026-06-04 13:05:00",
+        "beType": "5",
+        "beCode": "BE1057",
+        "storeCode": "1001057",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "20.96"
+      },
+      {
+        "orderId": "1030108270000795607354880058",
+        "orderType": "2",
+        "createTime": "2026-06-07 23:23:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001058",
+        "storeName": "麦当劳(知春路店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1085",
+            "productName": "玉米杯",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1162",
+            "productName": "新地",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "34.93"
+      },
+      {
+        "orderId": "1030108270000795607354880059",
+        "orderType": "1",
+        "createTime": "2026-06-08 06:48:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001059",
+        "storeName": "麦当劳(首都机场T3店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1043",
+            "productName": "早餐全餐",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1141",
+            "productName": "美式咖啡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "34.72"
+      },
+      {
+        "orderId": "1030108270000795607354880060",
+        "orderType": "2",
+        "createTime": "2026-06-12 00:11:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001000",
+        "storeName": "麦当劳(五道口购物中心店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1064",
+            "productName": "麦乐鸡(5块)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "33.77"
+      },
+      {
+        "orderId": "1030108270000795607354880061",
+        "orderType": "2",
+        "createTime": "2026-06-13 16:32:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001001",
+        "storeName": "麦当劳(中关村大街店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1106",
+            "productName": "可乐(中)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "25.89"
+      },
+      {
+        "orderId": "1030108270000795607354880062",
+        "orderType": "2",
+        "createTime": "2026-06-16 01:00:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001002",
+        "storeName": "麦当劳(五道口购物中心店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "20.70"
+      },
+      {
+        "orderId": "1030108270000795607354880063",
+        "orderType": "1",
+        "createTime": "2026-06-16 19:21:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001003",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1057",
+            "productName": "麦辣鸡翅",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "29.62"
+      },
+      {
+        "orderId": "1030108270000795607354880064",
+        "orderType": "1",
+        "createTime": "2026-06-18 05:29:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001004",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1036",
+            "productName": "猪柳蛋麦满分",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1099",
+            "productName": "香芋派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "24.94"
+      },
+      {
+        "orderId": "1030108270000795607354880065",
+        "orderType": "1",
+        "createTime": "2026-06-18 12:01:00",
+        "beType": "5",
+        "beCode": "BE1065",
+        "storeCode": "1001005",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "20.82"
+      },
+      {
+        "orderId": "1030108270000795607354880066",
+        "orderType": "2",
+        "createTime": "2026-06-18 21:05:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001006",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1106",
+            "productName": "可乐(中)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "29.02"
+      },
+      {
+        "orderId": "1030108270000795607354880067",
+        "orderType": "2",
+        "createTime": "2026-06-23 13:08:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001007",
+        "storeName": "麦当劳(清华科技园店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1106",
+            "productName": "可乐(中)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "30.31"
+      },
+      {
+        "orderId": "1030108270000795607354880068",
+        "orderType": "1",
+        "createTime": "2026-06-29 15:41:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001008",
+        "storeName": "麦当劳(清华科技园店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1057",
+            "productName": "麦辣鸡翅",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "35.25"
+      },
+      {
+        "orderId": "1030108270000795607354880069",
+        "orderType": "2",
+        "createTime": "2026-06-29 19:12:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001009",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1029",
+            "productName": "麦香鱼",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "14.69"
+      },
+      {
+        "orderId": "1030108270000795607354880070",
+        "orderType": "1",
+        "createTime": "2026-07-02 03:05:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001010",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1029",
+            "productName": "麦香鱼",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "14.06"
+      },
+      {
+        "orderId": "1030108270000795607354880071",
+        "orderType": "2",
+        "createTime": "2026-07-02 16:21:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001011",
+        "storeName": "麦当劳(五道口购物中心店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1029",
+            "productName": "麦香鱼",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1127",
+            "productName": "橙汁",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "26.22"
+      },
+      {
+        "orderId": "1030108270000795607354880072",
+        "orderType": "1",
+        "createTime": "2026-07-04 15:22:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001012",
+        "storeName": "麦当劳(五道口购物中心店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1092",
+            "productName": "苹果派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "27.00"
+      },
+      {
+        "orderId": "1030108270000795607354880073",
+        "orderType": "1",
+        "createTime": "2026-07-05 20:32:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001013",
+        "storeName": "麦当劳(五道口购物中心店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1120",
+            "productName": "雪碧(中)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "29.09"
+      },
+      {
+        "orderId": "1030108270000795607354880074",
+        "orderType": "1",
+        "createTime": "2026-07-07 23:37:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001014",
+        "storeName": "麦当劳(清华科技园店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1099",
+            "productName": "香芋派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "27.44"
+      },
+      {
+        "orderId": "1030108270000795607354880075",
+        "orderType": "1",
+        "createTime": "2026-07-11 01:44:00",
+        "beType": "5",
+        "beCode": "BE1075",
+        "storeCode": "1001015",
+        "storeName": "麦当劳(首都机场T3店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 2,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1085",
+            "productName": "玉米杯",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "51.41"
+      },
+      {
+        "orderId": "1030108270000795607354880076",
+        "orderType": "1",
+        "createTime": "2026-07-11 09:43:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001016",
+        "storeName": "麦当劳(首都机场T3店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1043",
+            "productName": "早餐全餐",
+            "quantity": 2,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1064",
+            "productName": "麦乐鸡(5块)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "58.17"
+      },
+      {
+        "orderId": "1030108270000795607354880077",
+        "orderType": "1",
+        "createTime": "2026-07-11 19:29:00",
+        "beType": "5",
+        "beCode": "BE1077",
+        "storeCode": "1001017",
+        "storeName": "麦当劳(首都机场T3店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1092",
+            "productName": "苹果派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "28.85"
+      },
+      {
+        "orderId": "1030108270000795607354880078",
+        "orderType": "2",
+        "createTime": "2026-07-12 15:28:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001018",
+        "storeName": "麦当劳(五道口购物中心店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "17.14"
+      },
+      {
+        "orderId": "1030108270000795607354880079",
+        "orderType": "2",
+        "createTime": "2026-07-17 15:39:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001019",
+        "storeName": "麦当劳(知春路店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1057",
+            "productName": "麦辣鸡翅",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "28.65"
+      },
+      {
+        "orderId": "1030108270000795607354880080",
+        "orderType": "2",
+        "createTime": "2026-07-18 00:33:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001020",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1141",
+            "productName": "美式咖啡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "31.85"
+      },
+      {
+        "orderId": "1030108270000795607354880081",
+        "orderType": "1",
+        "createTime": "2026-07-18 14:04:00",
+        "beType": "5",
+        "beCode": "BE1081",
+        "storeCode": "1001021",
+        "storeName": "麦当劳(五道口购物中心店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 2,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1120",
+            "productName": "雪碧(中)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "50.48"
+      },
+      {
+        "orderId": "1030108270000795607354880082",
+        "orderType": "1",
+        "createTime": "2026-07-23 21:15:00",
+        "beType": "5",
+        "beCode": "BE1082",
+        "storeCode": "1001022",
+        "storeName": "麦当劳(三里屯太古里店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1071",
+            "productName": "中薯条",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "31.22"
+      },
+      {
+        "orderId": "1030108270000795607354880083",
+        "orderType": "2",
+        "createTime": "2026-07-24 03:07:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001023",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 2,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1092",
+            "productName": "苹果派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "40.30"
+      },
+      {
+        "orderId": "1030108270000795607354880084",
+        "orderType": "1",
+        "createTime": "2026-07-26 20:08:00",
+        "beType": "5",
+        "beCode": "BE1084",
+        "storeCode": "1001024",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1127",
+            "productName": "橙汁",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "28.92"
+      },
+      {
+        "orderId": "1030108270000795607354880085",
+        "orderType": "2",
+        "createTime": "2026-07-30 19:27:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001025",
+        "storeName": "麦当劳(知春路店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1106",
+            "productName": "可乐(中)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "27.28"
+      },
+      {
+        "orderId": "1030108270000795607354880086",
+        "orderType": "1",
+        "createTime": "2026-07-30 23:59:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001026",
+        "storeName": "麦当劳(五道口购物中心店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1078",
+            "productName": "大薯条",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1162",
+            "productName": "新地",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "43.05"
+      },
+      {
+        "orderId": "1030108270000795607354880087",
+        "orderType": "1",
+        "createTime": "2026-08-01 06:43:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001027",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1036",
+            "productName": "猪柳蛋麦满分",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "16.34"
+      },
+      {
+        "orderId": "1030108270000795607354880088",
+        "orderType": "1",
+        "createTime": "2026-08-05 17:42:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001028",
+        "storeName": "麦当劳(清华科技园店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1085",
+            "productName": "玉米杯",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "26.83"
+      },
+      {
+        "orderId": "1030108270000795607354880089",
+        "orderType": "1",
+        "createTime": "2026-08-07 06:00:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001029",
+        "storeName": "麦当劳(知春路店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1036",
+            "productName": "猪柳蛋麦满分",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "15.99"
+      },
+      {
+        "orderId": "1030108270000795607354880090",
+        "orderType": "2",
+        "createTime": "2026-08-08 21:31:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001030",
+        "storeName": "麦当劳(中关村大街店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 2,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1106",
+            "productName": "可乐(中)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "46.39"
+      },
+      {
+        "orderId": "1030108270000795607354880091",
+        "orderType": "1",
+        "createTime": "2026-08-15 20:54:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001031",
+        "storeName": "麦当劳(三里屯太古里店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1134",
+            "productName": "拿铁",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "33.31"
+      },
+      {
+        "orderId": "1030108270000795607354880092",
+        "orderType": "1",
+        "createTime": "2026-08-19 03:02:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001032",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1064",
+            "productName": "麦乐鸡(5块)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "32.96"
+      },
+      {
+        "orderId": "1030108270000795607354880093",
+        "orderType": "1",
+        "createTime": "2026-08-21 22:52:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001033",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 2,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1120",
+            "productName": "雪碧(中)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "45.07"
+      },
+      {
+        "orderId": "1030108270000795607354880094",
+        "orderType": "2",
+        "createTime": "2026-08-22 06:22:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001034",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1043",
+            "productName": "早餐全餐",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1078",
+            "productName": "大薯条",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "34.81"
+      },
+      {
+        "orderId": "1030108270000795607354880095",
+        "orderType": "1",
+        "createTime": "2026-08-23 05:08:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001035",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1043",
+            "productName": "早餐全餐",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1127",
+            "productName": "橙汁",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "34.54"
+      },
+      {
+        "orderId": "1030108270000795607354880096",
+        "orderType": "2",
+        "createTime": "2026-08-24 07:20:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001036",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1050",
+            "productName": "热香饼",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1064",
+            "productName": "麦乐鸡(5块)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "25.14"
+      },
+      {
+        "orderId": "1030108270000795607354880097",
+        "orderType": "2",
+        "createTime": "2026-08-27 02:00:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001037",
+        "storeName": "麦当劳(知春路店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "20.51"
+      },
+      {
+        "orderId": "1030108270000795607354880098",
+        "orderType": "1",
+        "createTime": "2026-08-27 08:14:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001038",
+        "storeName": "麦当劳(知春路店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1036",
+            "productName": "猪柳蛋麦满分",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1071",
+            "productName": "中薯条",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "25.82"
+      },
+      {
+        "orderId": "1030108270000795607354880099",
+        "orderType": "1",
+        "createTime": "2026-08-28 16:25:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001039",
+        "storeName": "麦当劳(望京SOHO店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 2,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1106",
+            "productName": "可乐(中)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "50.24"
+      },
+      {
+        "orderId": "1030108270000795607354880100",
+        "orderType": "2",
+        "createTime": "2026-09-02 17:02:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001040",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "19.24"
+      },
+      {
+        "orderId": "1030108270000795607354880101",
+        "orderType": "1",
+        "createTime": "2026-09-04 19:41:00",
+        "beType": "5",
+        "beCode": "BE1101",
+        "storeCode": "1001041",
+        "storeName": "麦当劳(中关村大街店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1092",
+            "productName": "苹果派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "24.79"
+      },
+      {
+        "orderId": "1030108270000795607354880102",
+        "orderType": "2",
+        "createTime": "2026-09-05 23:14:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001042",
+        "storeName": "麦当劳(中关村大街店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1029",
+            "productName": "麦香鱼",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1064",
+            "productName": "麦乐鸡(5块)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "25.02"
+      },
+      {
+        "orderId": "1030108270000795607354880103",
+        "orderType": "1",
+        "createTime": "2026-09-09 04:02:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001043",
+        "storeName": "麦当劳(清华科技园店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "20.65"
+      },
+      {
+        "orderId": "1030108270000795607354880104",
+        "orderType": "1",
+        "createTime": "2026-09-10 16:28:00",
+        "beType": "5",
+        "beCode": "BE1104",
+        "storeCode": "1001044",
+        "storeName": "麦当劳(中关村大街店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "19.68"
+      },
+      {
+        "orderId": "1030108270000795607354880105",
+        "orderType": "1",
+        "createTime": "2026-09-13 05:38:00",
+        "beType": "5",
+        "beCode": "BE1105",
+        "storeCode": "1001045",
+        "storeName": "麦当劳(首都机场T3店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1050",
+            "productName": "热香饼",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1085",
+            "productName": "玉米杯",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "21.64"
+      },
+      {
+        "orderId": "1030108270000795607354880106",
+        "orderType": "1",
+        "createTime": "2026-09-17 02:49:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001046",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1029",
+            "productName": "麦香鱼",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1141",
+            "productName": "美式咖啡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "25.48"
+      },
+      {
+        "orderId": "1030108270000795607354880107",
+        "orderType": "2",
+        "createTime": "2026-09-17 07:12:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001047",
+        "storeName": "麦当劳(清华科技园店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1050",
+            "productName": "热香饼",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1099",
+            "productName": "香芋派",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "21.48"
+      },
+      {
+        "orderId": "1030108270000795607354880108",
+        "orderType": "1",
+        "createTime": "2026-09-18 03:43:00",
+        "beType": "5",
+        "beCode": "BE1108",
+        "storeCode": "1001048",
+        "storeName": "麦当劳(知春路店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1078",
+            "productName": "大薯条",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "32.95"
+      },
+      {
+        "orderId": "1030108270000795607354880109",
+        "orderType": "1",
+        "createTime": "2026-09-20 07:01:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001049",
+        "storeName": "麦当劳(三里屯太古里店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1050",
+            "productName": "热香饼",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1120",
+            "productName": "雪碧(中)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "22.57"
+      },
+      {
+        "orderId": "1030108270000795607354880110",
+        "orderType": "1",
+        "createTime": "2026-09-20 13:00:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001050",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1071",
+            "productName": "中薯条",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "32.08"
+      },
+      {
+        "orderId": "1030108270000795607354880111",
+        "orderType": "2",
+        "createTime": "2026-09-22 22:03:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001051",
+        "storeName": "麦当劳(西直门凯德店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1113",
+            "productName": "可乐(大)",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1162",
+            "productName": "新地",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "40.41"
+      },
+      {
+        "orderId": "1030108270000795607354880112",
+        "orderType": "2",
+        "createTime": "2026-09-23 10:18:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001052",
+        "storeName": "麦当劳(知春路店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "20.53"
+      },
+      {
+        "orderId": "1030108270000795607354880113",
+        "orderType": "2",
+        "createTime": "2026-09-26 03:25:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001053",
+        "storeName": "麦当劳(清华科技园店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1022",
+            "productName": "双层吉士汉堡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "17.56"
+      },
+      {
+        "orderId": "1030108270000795607354880114",
+        "orderType": "1",
+        "createTime": "2026-10-06 18:18:00",
+        "beType": "5",
+        "beCode": "BE1114",
+        "storeCode": "1001054",
+        "storeName": "麦当劳(清华科技园店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1001",
+            "productName": "巨无霸",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1120",
+            "productName": "雪碧(中)",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "30.33"
+      },
+      {
+        "orderId": "1030108270000795607354880115",
+        "orderType": "1",
+        "createTime": "2026-10-06 23:41:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001055",
+        "storeName": "麦当劳(首都机场T3店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1015",
+            "productName": "板烧鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "19.59"
+      },
+      {
+        "orderId": "1030108270000795607354880116",
+        "orderType": "2",
+        "createTime": "2026-10-08 17:26:00",
+        "beType": "2",
+        "beCode": "",
+        "storeCode": "1001056",
+        "storeName": "麦当劳(知春路店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1008",
+            "productName": "麦辣鸡腿堡",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1141",
+            "productName": "美式咖啡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "33.92"
+      },
+      {
+        "orderId": "1030108270000795607354880117",
+        "orderType": "1",
+        "createTime": "2026-10-09 21:01:00",
+        "beType": "1",
+        "beCode": "",
+        "storeCode": "1001057",
+        "storeName": "麦当劳(北京南站店)",
+        "orderStatus": "5",
+        "orderProductList": [
+          {
+            "productCode": "P1029",
+            "productName": "麦香鱼",
+            "quantity": 1,
+            "comboItemList": []
+          },
+          {
+            "productCode": "P1141",
+            "productName": "美式咖啡",
+            "quantity": 1,
+            "comboItemList": []
+          }
+        ],
+        "realTotalAmount": "26.53"
+      }
+    ]
+  }
+}

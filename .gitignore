@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 真实采集的数据 —— 绝对不要提交（可能含个人消费记录）
+.maimen-wrapped-raw/
+raw/
+*.orders.json
+*orders.json
+!assets/demo/demo_orders.json
+
+# 生成的报告
+*.html
+!examples/demo-report.html
+
+# 环境与密钥
+.env
+.env.*
+mcp-config.json
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# WorkBuddy
+.workbuddy/
