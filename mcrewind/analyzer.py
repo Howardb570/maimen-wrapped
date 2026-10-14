@@ -112,7 +112,7 @@ def unwrap_orders(payload: Any) -> list[dict[str, Any]]:
 
 
 @dataclass
-class WrappedStats:
+class RewindStats:
     """一份年报所需的全部聚合指标。"""
 
     # 总量
@@ -195,9 +195,9 @@ class WrappedStats:
 # ---------------------------------------------------------------------------
 
 
-def analyze(payload: Any, account: dict[str, Any] | None = None) -> WrappedStats:
-    """把原始订单 JSON 聚合为 :class:`WrappedStats`。"""
-    stats = WrappedStats()
+def analyze(payload: Any, account: dict[str, Any] | None = None) -> RewindStats:
+    """把原始订单 JSON 聚合为 :class:`RewindStats`。"""
+    stats = RewindStats()
     stats.account = account or {}
 
     orders = unwrap_orders(payload)

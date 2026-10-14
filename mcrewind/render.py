@@ -14,7 +14,7 @@ import html
 from datetime import datetime
 
 from .analyzer import (
-    WrappedStats,
+    RewindStats,
     format_amount,
     format_percent,
     top_n,
@@ -301,7 +301,7 @@ def _weekday_chart(hist: list[int]) -> str:
     )
 
 
-def _product_bars(stats: WrappedStats, limit: int = 5) -> str:
+def _product_bars(stats: RewindStats, limit: int = 5) -> str:
     """最常点餐品 Top N 条形图（CSS 实现）。"""
     top = top_n(stats.product_counter, limit)
     if not top:
@@ -320,7 +320,7 @@ def _product_bars(stats: WrappedStats, limit: int = 5) -> str:
     return f'<div class="bars">{"".join(rows)}</div>'
 
 
-def _channel_donut(stats: WrappedStats) -> str:
+def _channel_donut(stats: RewindStats) -> str:
     """渠道占比环形图 + 图例。"""
     counter = sorted(stats.channel_counter.items(), key=lambda kv: -kv[1])
     total = sum(stats.channel_counter.values())
@@ -356,7 +356,7 @@ def _channel_donut(stats: WrappedStats) -> str:
     return f'<div class="donut-row">{donut}<div class="legend">{"".join(legend_items)}</div></div>'
 
 
-def _store_rank(stats: WrappedStats, limit: int = 5) -> str:
+def _store_rank(stats: RewindStats, limit: int = 5) -> str:
     """常去门店排行。"""
     top = top_n(stats.store_counter, limit)
     if not top:
@@ -390,7 +390,7 @@ def _badge_wall(personas: list[dict[str, str]]) -> str:
 # ---------------------------------------------------------------------------
 
 
-def render(stats: WrappedStats, year: int | None = None, generated_at: str | None = None) -> str:
+def render(stats: RewindStats, year: int | None = None, generated_at: str | None = None) -> str:
     """把统计结果渲染成一份完整的单文件 HTML 报告。"""
     year = year or datetime.now().year
     generated_at = generated_at or datetime.now().strftime("%Y-%m-%d %H:%M")
@@ -403,7 +403,7 @@ def render(stats: WrappedStats, year: int | None = None, generated_at: str | Non
     if not stats.has_data:
         body = f"""
 <div class="hero">
-  <div class="eyebrow">McDonald's Data Wrapped {year}</div>
+  <div class="eyebrow">McDonald's Data Rewind {year}</div>
   <h1>我的 <span class="accent">麦麦倒带</span></h1>
   <p class="subtitle">{esc(generated_at)} 生成</p>
 </div>
@@ -523,7 +523,7 @@ def render(stats: WrappedStats, year: int | None = None, generated_at: str | Non
 
     body = f"""
 <div class="hero">
-  <div class="eyebrow">McDonald's Data Wrapped {year}</div>
+  <div class="eyebrow">McDonald's Data Rewind {year}</div>
   <h1>我的 <span class="accent">麦麦倒带</span></h1>
   <p class="subtitle">{esc(generated_at)} 生成 · 数据截至 {esc(stats.last_order_time or "未知")}</p>
 </div>
@@ -562,7 +562,7 @@ def _safe_float(value: object) -> float:
         return 0.0
 
 
-def _shell(page_title: str, body: str, stats: WrappedStats) -> str:
+def _shell(page_title: str, body: str, stats: RewindStats) -> str:
     """包一层完整 HTML 文档。"""
     return (
         "<!DOCTYPE html>\n"

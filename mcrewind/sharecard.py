@@ -16,7 +16,7 @@ from __future__ import annotations
 
 from datetime import datetime
 
-from .analyzer import WrappedStats, format_amount, top_n
+from .analyzer import RewindStats, format_amount, top_n
 from .render import PALETTE, esc
 
 #: 支持的画布比例 -> (宽, 高)
@@ -49,7 +49,7 @@ def _hour_strip(hist: list[int], width: int = 920, height: int = 84) -> str:
     )
 
 
-def _top_products(stats: WrappedStats, limit: int = 3) -> str:
+def _top_products(stats: RewindStats, limit: int = 3) -> str:
     """最常点餐品 Top N，纯 CSS 条形。"""
     top = top_n(stats.product_counter, limit)
     if not top:
@@ -72,7 +72,7 @@ def _top_products(stats: WrappedStats, limit: int = 3) -> str:
     return "".join(rows)
 
 
-def _metrics(stats: WrappedStats) -> str:
+def _metrics(stats: RewindStats) -> str:
     """三宫格核心数字。"""
     items = [
         ("年度订单", format_amount(stats.total_orders), "单"),
@@ -94,7 +94,7 @@ def _metrics(stats: WrappedStats) -> str:
 
 
 def render_share_card(
-    stats: WrappedStats,
+    stats: RewindStats,
     ratio: str = "3:4",
     year: int | None = None,
     brand: str = "麦麦倒带",

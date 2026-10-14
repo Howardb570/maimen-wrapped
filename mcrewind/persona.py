@@ -13,7 +13,7 @@
 
 from __future__ import annotations
 
-from .analyzer import WrappedStats, format_amount, format_percent
+from .analyzer import RewindStats, format_amount, format_percent
 
 # ---------------------------------------------------------------------------
 # 称号规则（互斥，取优先级最高的一个）
@@ -26,29 +26,29 @@ TITLE_RULES: list[tuple[int, str]] = []
 def _title_rules() -> list[tuple[int, object, str, str]]:
     """构建称号规则表。优先级数字越大越优先。"""
 
-    def night_beast(s: WrappedStats) -> bool:
+    def night_beast(s: RewindStats) -> bool:
         return s.night_orders >= 5 and s.night_orders / max(s.total_orders, 1) >= 0.2
 
-    def breakfast_keeper(s: WrappedStats) -> bool:
+    def breakfast_keeper(s: RewindStats) -> bool:
         return s.breakfast_orders >= 8
 
-    def power_user(s: WrappedStats) -> bool:
+    def power_user(s: RewindStats) -> bool:
         return s.total_orders >= 60
 
-    def bundle_hunter(s: WrappedStats) -> bool:
+    def bundle_hunter(s: RewindStats) -> bool:
         # 单均低于 25 元说明很会凑单
         return s.total_orders >= 10 and s.avg_amount <= 25
 
-    def big_spender(s: WrappedStats) -> bool:
+    def big_spender(s: RewindStats) -> bool:
         return s.total_orders >= 10 and s.avg_amount >= 55
 
-    def store_pilgrim(s: WrappedStats) -> bool:
+    def store_pilgrim(s: RewindStats) -> bool:
         return s.unique_stores >= 8
 
-    def loyalist(s: WrappedStats) -> bool:
+    def loyalist(s: RewindStats) -> bool:
         return s.total_orders >= 30
 
-    def regular(s: WrappedStats) -> bool:
+    def regular(s: RewindStats) -> bool:
         return s.total_orders >= 10
 
     return [
@@ -63,7 +63,7 @@ def _title_rules() -> list[tuple[int, object, str, str]]:
     ]
 
 
-def _render_reason(template: str, s: WrappedStats) -> str:
+def _render_reason(template: str, s: RewindStats) -> str:
     """把理由模板里的占位符替换成真实数字。
 
     可用占位符：
@@ -97,7 +97,7 @@ def _render_reason(template: str, s: WrappedStats) -> str:
 # ---------------------------------------------------------------------------
 
 
-def _build_badges(s: WrappedStats) -> list[dict[str, str]]:
+def _build_badges(s: RewindStats) -> list[dict[str, str]]:
     badges: list[dict[str, str]] = []
 
     def add(icon: str, name: str, detail: str) -> None:
@@ -147,7 +147,7 @@ def _build_badges(s: WrappedStats) -> list[dict[str, str]]:
     return badges[:6]
 
 
-def _channel_shares(s: WrappedStats) -> list[tuple[str, int, float]]:
+def _channel_shares(s: RewindStats) -> list[tuple[str, int, float]]:
     total = sum(s.channel_counter.values())
     return [
         (name, count, count / total if total else 0.0)
@@ -160,7 +160,7 @@ def _channel_shares(s: WrappedStats) -> list[tuple[str, int, float]]:
 # ---------------------------------------------------------------------------
 
 
-def generate_personas(stats: WrappedStats) -> list[dict[str, str]]:
+def generate_personas(stats: RewindStats) -> list[dict[str, str]]:
     """生成称号 + 徽章。永远返回非空列表。"""
     personas: list[dict[str, str]] = []
 

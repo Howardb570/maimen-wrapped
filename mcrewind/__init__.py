@@ -6,7 +6,7 @@
 用法::
 
     python -m mcrewind --demo
-    python -m mcrewind --orders orders.json --account account.json --out my-wrapped.html
+    python -m mcrewind --orders orders.json --account account.json --out my-rewind.html
 """
 
 __version__ = "1.0.0"
