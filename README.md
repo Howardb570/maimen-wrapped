@@ -140,7 +140,6 @@ mcrewind/
 │   └── demo-card.png         # 预生成的竖版分享卡
 ├── workbuddy.md              # WorkBuddy 开发会话记录·精简脱敏版（专项奖励要求）
 ├── workbuddy.full.md         # 同一会话的完整版（含逐条工具调用轨迹）
-├── SUBMISSION.md             # 报名文案与提交核对清单
 ├── MCP_INTEGRATION.md        # MCP 集成说明
 ├── mcp-config.example.json   # 脱敏配置示例
 └── CONTEST_DECLARATION.md    # 参赛声明
